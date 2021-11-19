@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
+  <title>HTML Elements Reference</title>
+</head>
+<body>
+
+<h1>"No new messages"</h1>
     <meta charset="UTF-8" />
     <title>HTML, CSS and SASS Boilerplate</title>
     <meta
@@ -8,6 +13,15 @@
       content="Used as a boilerplate for tasks in the 'HTML, CSS and SASS' course in boom.dev"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://rawgit.com/browserstate/history.js/master/scripts/bundled-uncompressed/html4%2Bhtml5/native.history.js"></script>
+    </head>
+    <body>
+        <script>
+            window.setTimeout(function(){
+                document.title = "One new message";
+                History.replaceState({}, "One new message", window.location.href);
+            }, 3000);
+        </script>
   </head>
   <body>
     <div class="main">
